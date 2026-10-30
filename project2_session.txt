@@ -1,0 +1,86 @@
+Script started on Thu Oct 29 18:17:06 2026
+Restored session: Thu Oct 29 18:13:45 PDT 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                       ]7;file://Eliass-MacBook-Pro-2.local/Users/eliaselmziat/Desktop/Big%20Data%20Project/data-delinquents-yelp-reviews[0m[27m[24m[Jeliaselmziat@Eliass-MacBook-Pro-2 data-delinquents-yelp-reviews % [K[?2004h[7mREV="/Users/eliaselmziat/Desktop/Big Data Project/Yelp JSON/yelp_dataset/yelp_academi[7mc[7m_dataset_review.json"[27m[K
+[7mbash run_pa1.sh "$REV"[27m[K[A[A[44C[27mR[27mE[27mV[27m=[27m"[27m/[27mU[27ms[27me[27mr[27ms[27m/[27me[27ml[27mi[27ma[27ms[27me[27ml[27mm[27mz[27mi[27ma[27mt[27m/[27mD[27me[27ms[27mk[27mt[27mo[27mp[27m/[27mB[27mi[27mg[27m [27mD[27ma[27mt[27ma[27m [27mP[27mr[27mo[27mj[27me[27mc[27mt[27m/[27mY[27me[27ml[27mp[27m [27mJ[27mS[27mO[27mN[27m/[27my[27me[27ml[27mp[27m_[27md[27ma[27mt[27ma[27ms[27me[27mt[27m/[27my[27me[27ml[27mp[27m_[27ma[27mc[27ma[27md[27me[27mm[27mic[27m_[27md[27ma[27mt[27ma[27ms[27me[27mt[27m_[27mr[27me[27mv[27mi[27me[27mw[27m.[27mj[27ms[27mo[27mn[27m"[1B[27mb[27ma[27ms[27mh[27m [27mr[27mu[27mn[27m_[27mp[27ma[27m1[27m.[27ms[27mh[27m [27m"[27m$[27mR[27mE[27mV[27m"[?2004l
+== A) data card facts ==
+-rw-r--r--@ 1 eliaselmziat  staff   5.0G Jan 19  2022 /Users/eliaselmziat/Desktop/Big Data Project/Yelp JSON/yelp_dataset/yelp_academic_dataset_review.json
+lines:  6990280
+-- peek (first record, 400 chars) --
+{"review_id":"KU_O5udG6zpxOg-VcAEodg","user_id":"mh_-eMZ6K5RLWhZyISBhwA","business_id":"XQfwVwDr-v0ZS3_CbbE5Xw","stars":3.0,"useful":0,"funny":0,"cool":0,"text":"If you decide to eat here, just be aware it is going to take about 2 hours from beginning to end. We have tried it multiple times, because I want to like it! I have been to it's other locations in NJ and never had a bad experience. \n\nTh
+== B) reproducible 1000-record sample ==
+sample lines:     1000
+== C) frequency tables ==
+1069561 1.0
+544240 2.0
+691934 3.0
+1452918 4.0
+3231627 5.0
+ 854 2005
+3853 2006
+15363 2007
+48226 2008
+74387 2009
+138587 2010
+230813 2011
+286570 2012
+383950 2013
+522275 2014
+688415 2015
+758882 2016
+820048 2017
+906362 2018
+907284 2019
+554557 2020
+618189 2021
+31665 2022
+3840492 0
+1539953 1
+687425 2
+343742 3
+186984 4
+112204 5
+71214 6
+47679 7
+34000 8
+24783 9
+7673 _ab50qdWOk0DdB6XOrBitw
+7516 ac1AeYqs8Z4_e2X5M3if2A
+6160 GXFMD0Z4jEVZBCsbPf4CTQ
+5778 ytynqOUb3hjKeJfRj5Tshw
+5264 oBNrLz4EDhiscSlbOl8uAw
+5254 iSRTaT9WngzB8JJ2YKJUig
+5146 VQcCL9PiNL_wkGf-uF3fjg
+4969 _C7QiQQc47AOEv4PE3Kong
+4661 GBTPC53ZrG1ZBY3DT8Mbcw
+4480 6a4gLLFSgr-Q6CZXDLzBGQ
+4293 PP3BBaVxZLcJU54uP_wL6Q
+4247 1b5mnK8bMnnju_cvU65GqQ
+4093 I_3LMZ_1m2mzR0oLIOePIg
+4034 VaO-VW3e1kARkU9bP1E7Fw
+3971 qb28j-FNX1_6xm7u372TZA
+3917 gTC8IQ_i8zXytWSly3Ttvg
+3889 yPSejq3_erxo9zdVYTBnZA
+3634 wz8ZPfySQczcPgSyd33-HQ
+3633 VVH6k9-ycttH3TV_lk5WfQ
+3428 IkY2ticzHEn4QFn8hQLSWg
+3388 QHWYlmVbLC3K6eglWoHVvA
+3264 9PZxjhTIU7OgPIzuGi89Ew
+3217 DcBLYSvOuWcNReolRVr12A
+3210 XnQ84ylyAZwh-XfHGGNBbQ
+3179 L5LLN0RafiV1Z9cddzvuCw
+== skinny table: review_id, business_id ==
+ 6990280 out/skinny_review_business.tsv
+== grep -i / grep -v demo ==
+mentions of 'rude' (case-insens): 196715
+== redirection: stdout vs stderr kept separate, then >> append ==
+1069561
+1-star reviews counted on 2026-10-29
+== optional join: business review counts + 5-star counts ==
+done; see out/ and logs/pa1_run.log
+[1m[7m%[27m[1m[0m                                                                                                                                                       ]7;file://Eliass-MacBook-Pro-2.local/Users/eliaselmziat/Desktop/Big%20Data%20Project/data-delinquents-yelp-reviews[0m[27m[24m[Jeliaselmziat@Eliass-MacBook-Pro-2 data-delinquents-yelp-reviews % [K[?2004heexoit   9ot   it[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Thu Oct 29 18:29:09 2026

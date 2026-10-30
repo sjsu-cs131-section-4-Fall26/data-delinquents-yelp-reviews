@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PA2 additions
+out/
+logs/
+data/*.json
+data/*.tar
+!data/samples/
