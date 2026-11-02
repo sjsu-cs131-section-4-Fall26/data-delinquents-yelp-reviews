@@ -11,12 +11,12 @@ die() { echo "ERROR: $*" >&2; exit 1; }
 [ $# -eq 1 ] || die "usage: bash run_pa2.sh <INPUT review json>"
 INPUT=$1
 [ -e "$INPUT" ] || die "input not found: $INPUT"
-chmod -R g+rX "$INPUT" 2>/dev/null || true
 { [ -f "$INPUT" ] && [ -r "$INPUT" ]; } || die "input not a readable file: $INPUT"
 [ -s "$INPUT" ] || die "input is empty: $INPUT"
 
 HERE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 WORD_LIMIT=${WORD_LIMIT:-500000}
+[[ "$WORD_LIMIT" =~ ^[1-9][0-9]*$ ]] || die "WORD_LIMIT must be a positive integer"
 mkdir -p out logs
 LOG=logs/pa2_run.log
 : > "$LOG"

@@ -18,8 +18,8 @@ s/","date":"([^"]*)"\}$/\t\1/
 # 5. text cleanup: JSON escapes for newline/return/tab -> single space
 s/\\[nrt]/ /g
 # 6. unescape quotes and backslashes; normalize curly quotes to straight
-s/\\"/'/g
-s/\\\\/\//g
+s/\\"/"/g
+s/\\\\/\\/g
 # 7. trim whitespace around delimiters and line ends; collapse repeated spaces
 s/[ ]*\t[ ]*/\t/g
 s/^[ ]+|[ ]+$//g
